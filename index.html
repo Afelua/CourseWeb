@@ -5,26 +5,27 @@
 <head>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
 </head>
 
 <body>
 <div class="wrapper">
     <header class="header">
-        <div class="header-container">
+        <div class="header__container">
             <h1 class="title">Jane Foster</h1>
             <nav>
                 <ul class="links">
-                    <li><a href="" class="link">About</a></li>
-                    <li><a href="" class="link">Works</a></li>
-                    <li><a href="" class="link">Contact</a></li>
+                    <li><a href="" class="links__item">About</a></li>
+                    <li><a href="" class="links__item">Works</a></li>
+                    <li><a href="" class="links__item">Contact</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="header-name">
-            <h2 class="subtitle">HELLO, I'M JANE FOSTER</h2>
-            <p class="about-me">I am a photographer and art director based in Paris currently having a great time working at personal portfolio.
-                I also freelance for many companies on my spare time and help them create joyful digital experiences.</p>
-            <div class="button-container">
+        <div class="header__name">
+            <h2 class="subtitle">HELLO, I&rsquo;M&nbsp;JANE FOSTER</h2>
+            <p class="header__about">I&nbsp;am a&nbsp;photographer and art director based in&nbsp;Paris currently having a&nbsp;great time working at&nbsp;personal portfolio.
+                I&nbsp;also freelance for many companies on&nbsp;my&nbsp;spare time and help them create joyful digital experiences.</p>
+            <div class="buttons">
                 <button class="button">Contact me</button>
                 <button class="button">View works</button>
             </div>
@@ -34,82 +35,81 @@
         <section class="about">
             <div>
                 <img src="images/about.jpg"
-                     srcset="images/about@2x.jpg 2x" class="about-img">
-                <span class="subtitle">Jane Foster, <span class="subtitle-text"> photographer</span></span>
+                     srcset="images/about@2x.jpg 2x" class="about__img">
+                <span class="subtitle">Jane Foster, <span class="subtitle__text"> photographer</span></span>
             </div>
-            <div class="paragraph-container">
+            <div class="about__wrapper">
                 <div class="about-paragraph">
                     <div class="about-paragraph__item">
                         <h2 class="subtitle">About me</h2>
-                        <p class="text">I am a photographer and art director based in Paris currently having a great time working at personal portfolio. I also freelance for many companies on my spare time and help them create joyful digital experiences and unique visual identities.</p>
+                        <p class="text">I&nbsp;am a&nbsp;photographer and art director based in&nbsp;Paris currently having a&nbsp;great time working at&nbsp;personal portfolio. I&nbsp;also freelance for many companies on&nbsp;my&nbsp;spare time and help them create joyful digital experiences and unique visual identities.</p>
                     </div>
                     <div class="about-paragraph__item about-paragraph__item_cv">
-                        <p>Wanna hire me for working on your company for full time or part time?</p>
-                        <a href="" class="link-cv">Download my CV</a>
+                        <p>Wanna hire me&nbsp;for working on&nbsp;your company for full time or&nbsp;part time?</p>
+                        <a href="" class="about-paragraph__link">Download my CV</a>
                     </div>
                 </div>
                 <h2 class="subtitle">Work experience</h2>
-                <div class="row">
+                <div class="row work">
                     <div class="column">
                         <h3 class="work__title">Postent, event photographer assistant
                             Paris, France
                         </h3>
-                        <span class="year">2012-2013</span>
+                        <span class="work__year">2012-2013</span>
                     </div>
                     <div class="column">
                         <h3 class="work__title">Freelance photographer
                             Self-employed
                         </h3>
-                        <span class="year">2017-2019</span>
+                        <span class="work__year">2017-2019</span>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row work">
                     <div class="column">
                         <h3 class="work__title">Photof, art director
                             Florence, Italy
                         </h3>
-                        <span class="year">2013-2017</span>
+                        <span class="work__year">2013-2017</span>
                     </div>
                 </div>
             </div>
-
         </section>
-        <section class="works">
-            <div class="works-title">
+        <section class="portfolio">
+            <div class="portfolio__title">
                 <h2 class="subtitle">My latest works</h2>
-                <span class="works__subtitle">Projects i’ve been working on.</span>
+                <span class="portfolio__subtitle">Projects i&rsquo;ve been working&nbsp;on.</span>
             </div>
             <ul class="examples">
-                <li class="portfolio-item">
+                <li class="examples__item">
                     <img src="images/work1.jpg"
                          srcset="images/work1@2x.jpg 2x" width="364px" height="234px">
-                    <div class="portfolio-item-text">
+                    <div class="examples__text">
                         <h3 class="subtitle">Waterfall</h3>
-                        <a href="" class="view">View the project</a>
+                        <a href="" class="examples__view">View the project</a>
                     </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="examples__item">
                     <img src="images/work2.jpg"
                          srcset="images/work2@2x.jpg 2x" width="364px" height="234px">
-                    <div class="portfolio-item-text">
+                    <div class="examples__text">
                         <h3 class="subtitle">New york night</h3>
-                        <a href="" class="view">View the project</a>
+                        <a href="" class="examples__view">View the project</a>
                     </div>
                 </li>
-                <li class="portfolio-item">
+                <li class="examples__item">
                     <img src="images/work3.jpg"
                          srcset="images/work3@2x.jpg 2x" width="364px" height="234px">
-                    <div class="portfolio-item-text">
+                    <div class="examples__text">
                         <h3 class="subtitle">Beautiful girl</h3>
-                        <a href="" class="view">View the project</a>
+                        <a href="" class="examples__view">View the project</a>
                     </div>
                 </li>
             </ul>
         </section>
-        <section>
-            <div class="form-text">Drop me a line to hire me for freelance projects.</div>
-            <form class="form" id="form">
-                <div class="inputs-container">
+        <section class="form">
+            <div class="form__text">Drop me&nbsp;a&nbsp;line to&nbsp;hire me&nbsp;for freelance projects.</div>
+            <form class="form__wrapper" id="form">
+                <div class="form__inputs">
                     <div>
                         <input type="text" placeholder="Name" class="input" id="name">
                         <input type="text" placeholder="E-mail" class="input" id="email">
@@ -117,7 +117,7 @@
                     </div>
                     <textarea placeholder="Message" class="textarea" id="message"></textarea>
                 </div>
-                <button class="button send">Send message</button>
+                <button class="button button_send">Send message</button>
                 <p id="successMessage" class="text"></p>
             </form>
         </section>
